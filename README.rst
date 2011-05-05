@@ -4,7 +4,9 @@ Animate from to v1.0 - a jQuery plugin
 
 This is a simple jQuery plugin with one simple purpose: to give the impression
 of movement from one element to another. This is useful for instance for
-a web shop when you want communicate that a product was added to the cart.
+a web shop when you want show that a product was added to the cart. The
+idea is based on another plugin called add2cart, but all of the code is
+rewritten and made more flexible.
 
 Who should I thank for this?
 ============================
