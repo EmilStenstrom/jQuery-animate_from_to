@@ -83,3 +83,13 @@ This is what the different arguments mean:
 
   **callback** (optional, default: <Dummy function that does nothing>)
     A callback that will be called when the animation finishes.
+
+License
+=======
+
+Copyright (c) 2011 Emil Stenstrom <http://friendlybit.com>
+
+Dual licensed under the MIT and GPL licenses:
+
+* http://www.opensource.org/licenses/mit-license.php
+* http://www.gnu.org/licenses/gpl.html
