@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sample usage for the Animate From To-plugin</title></head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="jquery.animate_from_to-1.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $.animate_from_to('#prod_123', '#cart');
+            })
+            $("#button2").click(function(){
+                $.animate_from_to('#prod_123', '#cart', {
+                    pixels_per_second: 1000
+                });
+            })
+            $("#button3").click(function(){
+                $.animate_from_to('#prod_123', '#cart', {
+                    pixels_per_second: 1000,
+                    initial_css: {
+                        'background': 'blue'
+                    }
+                });
+            })
+            $("#button4").click(function(){
+                $.animate_from_to('#prod_123', '#cart', {
+                    callback: function(){ alert('Animation done') },
+                });
+            })
+        });
+    </script>
+
+    <span id="cart">
+        My shopping cart
+    </span>
+
+    <br><br><br><br><br><br>
+
+    <div id="prod_123" style="height: 100px; width:300px; background: pink">
+        <form onsubmit="return false;">
+            <button type="submit" id="button1">Add to cart (default)</button>
+            <button type="submit" id="button2">Add to cart (slow)</button>
+            <button type="submit" id="button3">Add to cart (slow, blue)</button>
+            <button type="submit" id="button4">Add to cart (callback)</button>
+        </form>
+    </div>
+</body>
+</html>
