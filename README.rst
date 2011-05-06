@@ -23,15 +23,15 @@ Usage
 
 Arguments and construction:
 
-	$(sourceElm).animate_from_to(targetElm [, options]);
+    $(sourceElm).animate_from_to(targetElm [, options]);
 
 Basic, bare bones example with real arguments:
 
-	$("#area-1").animate_from_to("#area-2");
+    $("#area-1").animate_from_to("#area-2");
 
 It's also possible to use this construct:
 
-	$.animate_from_to(sourceElm, targetElm, [, options]);
+    $.animate_from_to(sourceElm, targetElm, [, options]);
 
 
 Full example:
@@ -110,16 +110,16 @@ Function. A callback that will be called when the animation finishes.
 
 A custom call would hence look like this:
 
-	$("#prod_123").animate_from_to("#cart", {
-		pixels_per_second: 1000,
-		initial_css: {
-			"color": "red",
-			"background-color": blue
-		},
-		callback: function(){
-			alert("Completed!");
-		}
-	});
+    $("#prod_123").animate_from_to("#cart", {
+        pixels_per_second: 1000,
+        initial_css: {
+            "color": "red",
+            "background-color": blue
+        },
+        callback: function(){
+            alert("Completed!");
+        }
+    });
 
 
 License
