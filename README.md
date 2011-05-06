@@ -11,9 +11,9 @@ rewritten and made more flexible.
 Who should I thank for this?
 ============================
 
-You should thank me, Emil Stenström <http://friendlybit.com>. You're welcome!
+You should thank me, Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
 
-Johan Brook (<http://johanbrook.com>) contributed with code restructuring and a second type of plugin call.
+Johan Brook [<http://johanbrook.com](<http://johanbrook.com)) contributed with code restructuring and a different type of plugin call.
 
 Quickstart
 ==========
@@ -23,15 +23,15 @@ Usage
 
 Arguments and construction:
 
-    $(sourceElm).animate_from_to(targetElm [, options]);
+	$(sourceElm).animate_from_to(targetElm [, options]);
 
 Basic, bare bones example with real arguments:
 
-    $("#area-1").animate_from_to("#area-2");
+	$("#area-1").animate_from_to("#area-2");
 
 It's also possible to use this construct:
 
-    $.animate_from_to(sourceElm, targetElm, [, options]);
+	$.animate_from_to(sourceElm, targetElm, [, options]);
 
 
 Full example:
