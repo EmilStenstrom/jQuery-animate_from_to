@@ -34,7 +34,8 @@ It's also possible to use this construct:
 	$.animate_from_to(sourceElm, targetElm, [, options]);
 
 
-Full example:
+Example
+-------
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="jquery.animate_from_to-1.0.js"></script>
@@ -57,13 +58,17 @@ Full example:
         </form>
     </div>
 
-Slow the speed of the animation::
+
+Customization
+------------
+
+Slow the speed of the animation:
 
     $('#prod_123').animate_from_to('#cart', {
         pixels_per_second: 1000
     });
 
-Slow the speed and make the animated element blue::
+Slow the speed and make the animated element blue:
 
     $('#prod_123').animate_from_to('#cart', {
         pixels_per_second: 1000,
@@ -72,7 +77,7 @@ Slow the speed and make the animated element blue::
         }
     });
 
-Call the function of your choice when the animation finishes::
+Call the function of your choice when the animation finishes:
 
     $('#prod_123').animate_from_to('#cart', {
         callback: function(){ 
