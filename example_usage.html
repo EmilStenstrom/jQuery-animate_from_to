@@ -3,34 +3,34 @@
 <head><title>Sample usage for the Animate From To-plugin</title></head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="jquery.animate_from_to-1.0.min.js"></script>
+    <script src="jquery.animate_from_to-1.0.js"></script>
     <script>
         $(document).ready(function(){
             $("#button1").click(function(){
 				// Animate one element to another – bare bones version:
-				
+
 				$("#prod_123").animate_from_to("#cart");
-				
+
 				// May also be constructed as:
-				
+
 				// $.animate_from_to("#prod_123", "#cart");
             })
             $("#button2").click(function(){
                 $("#prod_123").animate_from_to('#cart', {
-                    pixels_per_second: 1000
+                    pixels_per_second: 200
                 });
 
 				// Or :
-				
+
 				/*
 				$.animate_from_to("#prod_123", "#cart", {
-					pixels_per_second: 1000
+					pixels_per_second: 200
 				});
 				*/
             })
             $("#button3").click(function(){
                 $("#prod_123").animate_from_to('#cart', {
-                    pixels_per_second: 1000,
+                    pixels_per_second: 200,
                     initial_css: {
                         'background': 'blue'
                     }
@@ -49,7 +49,7 @@
     </span>
 
 
-    <div id="prod_123" style="height: 100px; width:300px; margin-top: 100px; background: pink">
+    <div id="prod_123" style="height: 100px; width:300px; margin-top: 300px; background: pink">
         <form onsubmit="return false;">
             <button type="submit" id="button1">Add to cart (default)</button>
             <button type="submit" id="button2">Add to cart (slow)</button>
