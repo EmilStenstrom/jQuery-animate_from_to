@@ -7,15 +7,29 @@
     <script>
         $(document).ready(function(){
             $("#button1").click(function(){
-                $.animate_from_to('#prod_123', '#cart');
+				// Animate one element to another – bare bones version:
+				
+				$("#prod_123").animate_from_to("#cart");
+				
+				// May also be constructed as:
+				
+				// $.animate_from_to("#prod_123", "#cart");
             })
             $("#button2").click(function(){
-                $.animate_from_to('#prod_123', '#cart', {
+                $("#prod_123").animate_from_to('#cart', {
                     pixels_per_second: 1000
                 });
+
+				// Or :
+				
+				/*
+				$.animate_from_to("#prod_123", "#cart", {
+					pixels_per_second: 1000
+				});
+				*/
             })
             $("#button3").click(function(){
-                $.animate_from_to('#prod_123', '#cart', {
+                $("#prod_123").animate_from_to('#cart', {
                     pixels_per_second: 1000,
                     initial_css: {
                         'background': 'blue'
@@ -23,7 +37,7 @@
                 });
             })
             $("#button4").click(function(){
-                $.animate_from_to('#prod_123', '#cart', {
+                $("#prod_123").animate_from_to('#cart', {
                     callback: function(){ alert('Animation done') },
                 });
             })
@@ -34,9 +48,8 @@
         My shopping cart
     </span>
 
-    <br><br><br><br><br><br>
 
-    <div id="prod_123" style="height: 100px; width:300px; background: pink">
+    <div id="prod_123" style="height: 100px; width:300px; margin-top: 100px; background: pink">
         <form onsubmit="return false;">
             <button type="submit" id="button1">Add to cart (default)</button>
             <button type="submit" id="button2">Add to cart (slow)</button>
