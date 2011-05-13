@@ -80,7 +80,7 @@ Slow the speed and make the animated element blue:
 Call the function of your choice when the animation finishes:
 
     $('#prod_123').animate_from_to('#cart', {
-        callback: function(){ 
+        callback: function(){
 			alert('Animation done');
 		}
     });
@@ -105,11 +105,11 @@ Speed of the animation, in number of pixels per elapsed second. This makes the
 animation move with constant same speed no matter where on the page the
 element is.
 
-- **initial_css** (optional, default: <See source>).
+- **initial_css** (optional, default: [See source]).
 Object literal. A way to override the default CSS of the "shadow" element that is part of the
 animation.
 
-- **callback** (optional, default: <Dummy function that does nothing>).
+- **callback** (optional, default: [Dummy function that does nothing]).
 Function. A callback that will be called when the animation finishes.
 
 
