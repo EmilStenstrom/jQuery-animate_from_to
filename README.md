@@ -13,7 +13,7 @@ Who should I thank for this?
 
 You should thank me, Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
 
-Johan Brook [<http://johanbrook.com](<http://johanbrook.com)) contributed with code restructuring and a different type of plugin call.
+Johan Brook [http://johanbrook.com](http://johanbrook.com) contributed with code restructuring and a different type of plugin call.
 
 Quickstart
 ==========
