@@ -34,12 +34,22 @@
                 "width": source.width(),
                 "z-index": 100000
             },
+            square: '',
             callback: function(){ return; }
         }
         if (options && options.initial_css) {
             options.initial_css = $.extend({}, defaults.initial_css, options.initial_css);
         }
         options = $.extend({}, defaults, options);
+
+        var target_height = target.innerHeight(),
+            target_width = target.innerWidth();
+
+        if (options.square.toLowerCase() == 'height') {
+            target_width = target_height;
+        } else if (options.square.toLowerCase() == 'width') {
+            target_height = target_width;
+        }
 
         var dy = source.offset().top + source.width()/2 - target.offset().top,
             dx = source.offset().left + source.height()/2 - target.offset().left,
@@ -52,8 +62,8 @@
                 .animate({
                     top: target.offset().top,
                     left: target.offset().left,
-                    height: target.innerHeight(),
-                    width: target.innerWidth()
+                    height: target_height,
+                    width: target_width
                 }, {
                     duration: duration
                 })
