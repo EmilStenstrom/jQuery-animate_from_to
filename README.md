@@ -112,7 +112,7 @@ animation.
 - **image** (optional, default: '').
 URL to image that will be used instead of a blank div
 
--- **square** (optional, default: '').
+- **square** (optional, default: '').
 There are two options
 height: Will keep the animated div square, and animate it to the targets height
 width: Will keep the animated div square, and animate it to the targets width
