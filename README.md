@@ -109,6 +109,14 @@ element is.
 Object literal. A way to override the default CSS of the "shadow" element that is part of the
 animation.
 
+- **image** (optional, default: '').
+URL to image that will be used instead of a blank div
+
+- **square** (optional, default: '').
+There are two options
+height: Will keep the animated div square, and animate it to the targets height
+width: Will keep the animated div square, and animate it to the targets width
+
 - **callback** (optional, default: [Dummy function that does nothing]).
 Function. A callback that will be called when the animation finishes.
 

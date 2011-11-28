@@ -32,8 +32,10 @@
                 "left": source.offset().left,
                 "height": source.height(),
                 "width": source.width(),
-                "z-index": 100000
+                "z-index": 100000,
+                "image": ""
             },
+            square: '',
             callback: function(){ return; }
         }
         if (options && options.initial_css) {
@@ -41,19 +43,33 @@
         }
         options = $.extend({}, defaults, options);
 
+        var target_height = target.innerHeight(),
+            target_width = target.innerWidth();
+
+        if (options.square.toLowerCase() == 'height') {
+            target_width = target_height;
+        } else if (options.square.toLowerCase() == 'width') {
+            target_height = target_width;
+        }
+
+        var shadowImage = "";
+        if (options.initial_css.image != "") {
+            shadowImage = "<img src='" + options.initial_css.image + "' style='width: 100%; height: 100%' />";
+        }
+
         var dy = source.offset().top + source.width()/2 - target.offset().top,
             dx = source.offset().left + source.height()/2 - target.offset().left,
             pixel_distance = Math.floor(Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))),
             duration = (pixel_distance/options.pixels_per_second)*1000,
 
-            shadow = $('<div></div>')
+            shadow = $('<div>' + shadowImage + '</div>')
                 .css(options.initial_css)
                 .appendTo('body')
                 .animate({
                     top: target.offset().top,
                     left: target.offset().left,
-                    height: target.innerHeight(),
-                    width: target.innerWidth()
+                    height: target_height,
+                    width: target_width
                 }, {
                     duration: duration
                 })
