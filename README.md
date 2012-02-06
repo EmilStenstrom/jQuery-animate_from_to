@@ -8,12 +8,16 @@ a web shop when you want show that a product was added to the cart. The
 idea is based on another plugin called add2cart, but all of the code is
 rewritten and made more flexible.
 
-Who should I thank for this?
+Tested in Firefox 10, IE 7-9, Chrome 17, Opera 10, Safari 5, and probably many more. It's not that much code, so if you find some bug it's easy to fix.
+
+Note: You need to be in standards mode for this to work. In IE, use: ```<meta http-equiv="X-UA-Compatible" content="IE=Edge" />```
+
+Who did this?
 ============================
 
-You should thank me, Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
-
-Johan Brook [http://johanbrook.com](http://johanbrook.com) contributed with code restructuring and a different type of plugin call.
+* Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
+* Johan Brook [http://johanbrook.com](http://johanbrook.com) contributed with code restructuring and a different type of plugin call.
+* You? I'd love more contributions.
 
 Quickstart
 ==========
