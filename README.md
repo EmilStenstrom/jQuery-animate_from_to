@@ -14,8 +14,8 @@ Note: You need to be in standards mode for this to work. In IE, use: ```<meta ht
 Who did this?
 ============================
 
-* Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
-* Johan Brook [http://johanbrook.com](http://johanbrook.com) contributed with code restructuring and a different type of plugin call.
+* Emil Stenström [https://friendlybit.com](https://friendlybit.com). You're welcome!
+* Johan Brook [https://johanbrook.com](https://johanbrook.com) contributed with code restructuring and a different type of plugin call.
 * Thorbjörn 'Puggan' Sundragon [https://puggan.se/](https://puggan.se/) contributed TypeScript definitions.
 * You? I'd love more contributions.
 
@@ -41,7 +41,7 @@ It's also possible to use this construct:
 Example
 -------
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="jquery.animate_from_to-1.0.js"></script>
     <script>
         $(document).ready(function(){
@@ -142,9 +142,9 @@ A custom call would hence look like this:
 License
 =======
 
-Copyright (c) 2011 Emil Stenstrom <http://friendlybit.com>
+Copyright (c) 2011 Emil Stenstrom <https://friendlybit.com>
 
 Dual licensed under the MIT and GPL licenses:
 
-* http://www.opensource.org/licenses/mit-license.php
-* http://www.gnu.org/licenses/gpl.html
+* https://www.opensource.org/licenses/mit-license.php
+* https://www.gnu.org/licenses/gpl.html
