@@ -16,6 +16,7 @@ Who did this?
 
 * Emil Stenström [http://friendlybit.com](http://friendlybit.com). You're welcome!
 * Johan Brook [http://johanbrook.com](http://johanbrook.com) contributed with code restructuring and a different type of plugin call.
+* Thorbjörn 'Puggan' Sundragon [https://puggan.se/](https://puggan.se/) contributed TypeScript definitions.
 * You? I'd love more contributions.
 
 Quickstart
